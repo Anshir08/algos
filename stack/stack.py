@@ -4,7 +4,7 @@ class Stack(object):
         self._list = []
 
     def push(self, item):
-        self._list.append(item)
+        return self._list.append(item)
 
     def pop(self):
         try:
@@ -19,7 +19,8 @@ def main():
     for i in range(10):
         st.push(i)
         print("Pushed ", i)
-    st.push('Hello World')
+        
+    print(st.push(input('Enter element')))
 
     # Pop
     print(st.pop())
